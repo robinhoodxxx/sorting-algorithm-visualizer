@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting algorithms visilulizer</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="head">
+  <h2>Sorting algorithms visilulizer </h2>
+  <h3>sorts</h3>
+ </div>
+  
+    <header>
+      
+        <div class="menu">
+
+        <div class="leftbar">
+           <div class="arraysize">
+            <h3>Array Size :</h3>
+            <div class="arrayrange">
+              <input id="a_size" type="range" min=20 max=200 step=1 value=30>
+              
+            <h4 id="array_size"></h4>
+            </div>
+           </div>
+           <div class="speed">
+            <h3>algo speed :</h3>
+            <div class="speedrange">
+              <div class="slider">
+                <input id="speed" type="range" min=10 max=120 step=1 value=80>
+                <div class="slide"></div>
+              </div>
+            <h4 id="speed_meter"></h4>
+            </div>
+           </div>
+          
+           <button id="generateArray">Generate new array</button>
+      </div>
+
+       <div class="algobuttons" id="algos">
+           
+           <button >Bubble</button>
+           <button>Insertion</button>
+           <button>Selection</button>
+           <button>Merge</button>
+           <button>Quick</button>
+           
+       </div>
+
+
+
+        </div>
+    </header>
+
+    <footer>
+      <div class="left">
+
+      <h3>Empty</h3>
+
+      </div>
+      <div  class="main"
+        id="main"></div>
+
+
+      <div class="right">
+        
+        <div class="time">
+          <h2>TimeComplexity</h2>
+          <h3 id="sort"></h3>
+          <div class="big">
+            <h3>WorstCase(BigO): </h3>
+            <h4></h4>
+          </div>
+          <div class="avg"><h3>averagecase: </h3>
+            <h4></h4></div>
+            <div class="best">
+              <h3>BestCase: </h3>
+              <h4></h4>
+            </div>
+            <br><br>
+            <h4>n means length of the array</h4>
+            
+           </div>
+           <div class="spacecomplexity">
+            <h2>spaceComplexity</h2>
+            <div class="space">
+              <h4>
+                
+              </h4>
+            </div>
+           
+           </div>
+           
+      </div>
+
+    </footer>
+    <section>
+      <div  class="bubble">
+
+        <h2 id="hhhh"></h2>
+       
+      </div>
+      <h3>   Always worstcase is your algorithm complexity i.e BigO</h3>
+    </section>
+
+    <script src="js.files/timecomplexity.js"></script>
+  <script src="js.files/main.js"></script>
+  
+  <script src="js.files/bubblesort.js"></script>
+  <script src="js.files/insertion.js"></script>
+  <script src="js.files/selection.js"></script>
+  <script src="js.files/merge.js"></script>
+  <script src="js.files/Quicksort.js"></script>
+  
+ 
+</body>
+</html>
